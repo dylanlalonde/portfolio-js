@@ -27,7 +27,7 @@ Global Classes
   border-radius: 0;
   padding: 0.5rem 1rem;
 }
-.btn:hover {
+.btn-white:hover {
   background: var(--clr-white);
   color: var(--clr-secondary);
 }

@@ -3,8 +3,14 @@
 Section
 ===============
 */
-.section {
+
+/* .section {
   padding-bottom: 5rem;
+} */
+
+/* replaced previous when adding menu functionality  */
+.section {
+  padding-bottom: 5rem 0;
 }
 
 .section-center {

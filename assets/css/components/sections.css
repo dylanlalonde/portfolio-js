@@ -15,6 +15,11 @@ Sections
 #contact {
   height: 80vh;
 }
+
+#projects {
+  height: auto;
+}
+
 #about {
   background: var(--clr-white);
 }
