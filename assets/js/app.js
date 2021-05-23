@@ -17,7 +17,8 @@ const navbar = document.getElementById("nav");
 
 // used in smoothScroll()
 const scrollLinks = document.querySelectorAll(".scroll-link");
-// function also accesses navbar & linksContainer variables
+// const navbar (defined above)
+// const linksContainer (defined above)
 
 
 /*
