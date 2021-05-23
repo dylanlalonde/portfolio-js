@@ -3,7 +3,6 @@
 Global Variables
 ===============
 */
-
 // used in setDate()
 const date = document.getElementById("date");
 
