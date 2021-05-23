@@ -1,0 +1,20 @@
+/*
+=============== 
+Setup
+===============
+*/
+@import url(./setup/fonts.css);
+@import url(./setup/variables.css);
+@import url(./setup/global-styles.css);
+@import url(./setup/global-classes.css);
+@import url(./setup/section.css);
+
+/*
+=============== 
+Components
+===============
+*/
+@import url(./components/navbar.css);
+@import url(./components/hero.css);
+@import url(./components/sections.css);
+@import url(./components/top-link.css);
