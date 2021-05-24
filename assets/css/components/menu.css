@@ -94,3 +94,15 @@ Menu
     height: 150px;
   }
 }
+/* prevent filter buttons from growing off screen on mobile */
+@media screen and (max-width: 768px) {
+  .btn-container {
+    max-width: 300px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  .filter-btn {
+    margin-bottom: 1rem;
+  }
+}

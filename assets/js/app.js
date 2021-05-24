@@ -352,6 +352,31 @@ var projectsModals = function () {
 projectsModals();
 
 
+/*
+=============== 
+Projects Modals Tabs
+===============
+*/
 
+const btns = document.querySelectorAll(".tab-btn");
+const body = document.querySelector(".modal-body");
+const articles = document.querySelectorAll(".modal-content-item");
 
-
+body.addEventListener("click", function (event) {
+  const id = event.target.dataset.id;
+  if (id) {
+    // remove active from other buttons
+    btns.forEach(function(btn) {
+      btn.classList.remove("active");
+      // add active class to target button
+      event.target.classList.add("active");
+    });
+    // hide all articles
+    articles.forEach(function(article){
+      article.classList.remove("active");
+    });
+    // show active article
+    const element = document.getElementById(id);
+    element.classList.add("active");
+  }
+})

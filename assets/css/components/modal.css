@@ -34,8 +34,10 @@ Modal
 .modal-container {
   background: var(--clr-white);
   border-radius: var(--radius);
-  width: 90vw;
-  height: 30vh;
+  /* width: 90vw; */
+  /* height: 30vh; */
+  width: auto;
+  height: auto;
   max-width: var(--fixed-width);
   text-align: center;
   display: grid;
@@ -56,4 +58,77 @@ Modal
 .close-btn:hover {
   color: var(--clr-red-light);
   transform: scale(1.3);
+}
+
+/*
+=============== 
+Modal Content
+===============
+*/
+.modal-img {
+  margin-bottom: 2rem;
+}
+.modal-img img {
+  border-radius: var(--radius);
+  object-fit: cover;
+  height: 20rem;
+}
+@media screen and (min-width: 992px) {
+  .modal-img {
+    margin-bottom: 0;
+  }
+
+  .modal-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+.modal-body {
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.modal-btn-container {
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.tab-btn:nth-child(1) {
+  border-top-left-radius: var(--radius);
+}
+.tab-btn:nth-child(3) {
+  border-top-right-radius: var(--radius);
+}
+.tab-btn {
+  padding: 1rem 0;
+  border: none;
+  text-transform: capitalize;
+  font-size: 1rem;
+  display: block;
+  background: var(--clr-grey-9);
+  cursor: pointer;
+  /* transition: var(--transition); */
+  letter-spacing: var(--spacing);
+}
+.tab-btn:hover:not(.active) {
+  background: var(--clr-primary-10);
+  color: var(--clr-primary-5);
+}
+.modal-content {
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  padding: 2rem 1.5rem;
+}
+/* hide content */
+.modal-content-item {
+  display: none;
+}
+.tab-btn.active {
+  background: var(--clr-white);
+}
+.modal-content-item.active {
+  display: block;
 }
