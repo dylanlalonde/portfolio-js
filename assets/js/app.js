@@ -19,7 +19,7 @@ const scrollLinks = document.querySelectorAll(".scroll-link");
 // const navbar (defined above)
 // const linksContainer (defined above)
 
-// used in projects menu functionality
+// used in projectsMenu()
 const menu = [
   {
     id: 1,
@@ -102,9 +102,11 @@ const menu = [
     desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
   }
 ];
-
 const sectionCenter = document.querySelector(".section-center");
 const container = document.querySelector(".btn-container");
+
+// used in projectModals()
+const modalOverlay = document.querySelector(".modal-overlay");
 
 
 /*
@@ -261,7 +263,10 @@ var projectsMenu = function () {
       <div class="item-info">
         <header>
           <h4>${item.title}</h4>
-          <h4 class="price">${item.price}</h4>
+          
+          <button class="btn modal-btn">
+          open modal
+        </button>
         </header>
         <p class="item-text">
           ${item.desc}
@@ -307,3 +312,46 @@ var projectsMenu = function () {
 }
 
 projectsMenu();
+
+
+/*
+=============== 
+Global Event Listener
+===============
+*/
+
+function addGlobalEventListener(type, selector, callback) {
+  document.addEventListener(type, e => {
+    if (e.target.matches(selector)) callback(e)
+  });
+}
+
+
+/*
+=============== 
+Projects Modals
+===============
+*/
+
+var projectsModals = function () {
+
+  addGlobalEventListener("click", ".btn.modal-btn", e => {
+    if (e.target.matches(".btn.modal-btn")) {
+      modalOverlay.classList.add("open-modal");
+    }
+  });
+
+  addGlobalEventListener("click", ".fas.fa-times", e => {
+    if (e.target.parentElement.matches("button.close-btn")) {
+      modalOverlay.classList.remove("open-modal");
+    }
+  });
+
+}
+
+projectsModals();
+
+
+
+
+
