@@ -4,7 +4,7 @@ Menu
 ===============
 */
 
-.menu {
+.project-menu {
   padding: 5rem 0;
 }
 .title {
@@ -48,7 +48,7 @@ Menu
   gap: 3rem 2rem;
   justify-items: center;
 }
-.menu-item {
+.project-item {
   display: grid;
   gap: 1rem 2rem;
   max-width: 25rem;
@@ -59,18 +59,18 @@ Menu
   border: 0.25rem solid var(--clr-gold);
   border-radius: var(--radius);
 }
-.item-info header {
+.project-info header {
   display: flex;
   justify-content: space-between;
   border-bottom: 0.5px dotted var(--clr-grey-5);
 }
-.item-info h4 {
+.project-info h4 {
   margin-bottom: 0.5rem;
 }
 .price {
   color: var(--clr-gold);
 }
-.item-text {
+.project-text {
   margin-bottom: 0;
   padding-top: 1rem;
 }
