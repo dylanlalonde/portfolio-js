@@ -39,7 +39,7 @@ const projects = [
     price: 13.99,
     img: "item-2.jpeg",
     desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats `,
-    history: `I'm baby wolf pickled schlitz try-hard normcore marfa man bun mumblecore vice pop-up XOXO lomo kombucha glossier bicycle rights. Umami kinfolk salvia jean shorts offal venmo. Knausgaard tilde try-hard, woke fixie banjo man bun. Small batch tumeric mustache tbh wayfarers 8-bit shaman chartreuse tacos. Viral direct trade hoodie ugh chambray, craft beer pork belly flannel tacos single-origin coffee art party migas plaid pop-up.`,
+    history: `project 2 history: I'm baby wolf pickled schlitz try-hard normcore marfa man bun mumblecore vice pop-up XOXO lomo kombucha glossier bicycle rights. Umami kinfolk salvia jean shorts offal venmo. Knausgaard tilde try-hard, woke fixie banjo man bun. Small batch tumeric mustache tbh wayfarers 8-bit shaman chartreuse tacos. Viral direct trade hoodie ugh chambray, craft beer pork belly flannel tacos single-origin coffee art party migas plaid pop-up.`,
     vision: `Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth crucifix offal deep v hella biodiesel. Church-key listicle polaroid put a bird on it chillwave palo santo enamel pin, tattooed meggings franzen la croix cray. Retro yr aesthetic four loko tbh helvetica air plant, neutra palo santo tofu mumblecore. Hoodie bushwick pour-over jean shorts chartreuse shabby chic. Roof party hammock master cleanse pop-up truffaut, bicycle rights skateboard affogato readymade sustainable deep v live-edge schlitz narwhal.`,
     goals: `Chambray authentic truffaut, kickstarter brunch taxidermy vape heirloom four dollar toast raclette shoreditch church-key. Poutine etsy tote bag, cred fingerstache leggings cornhole everyday carry blog gastropub. Brunch biodiesel sartorial mlkshk swag, mixtape hashtag marfa readymade direct trade man braid cold-pressed roof party. Small batch adaptogen coloring book heirloom. Letterpress food truck hammock literally hell of wolf beard adaptogen everyday carry. Dreamcatcher pitchfork yuccie, banh mi salvia venmo photo booth quinoa chicharrones.`,
   },
@@ -368,10 +368,35 @@ Projects Modals
 ===============
 */
 
-var projectsModals = function () {
+let modalContentDiv = document.querySelector(".modal-content");
 
+function projectsModals() {
   addGlobalEventListener("click", ".btn.modal-btn", e => {
+    let itemId = e.target.attributes[1].value;
+    let targetProject = projects[itemId - 1];
+
+    let modalContent =
+      `<!-- single item -->
+        <div class="modal-content-item active" id="history">
+          <h4>history</h4>
+          <p>${targetProject.history}</p>
+        </div>
+        <!-- end of single item -->
+        <!-- single item -->
+        <div class="modal-content-item" id="vision">
+          <h4>vision</h4>
+          <p>${targetProject.vision}</p>
+        </div>
+        <!-- end of single item -->
+        <!-- single item -->
+        <div class="modal-content-item" id="goals">
+          <h4>goals</h4>
+          <p>${targetProject.goals}</p>
+        </div>
+        <!-- end of single item -->`;
+    
     if (e.target.matches(".btn.modal-btn")) {
+      modalContentDiv.innerHTML = modalContent;
       modalOverlay.classList.add("open-modal");
     }
   });
@@ -389,7 +414,7 @@ projectsModals();
 
 /*
 =============== 
-Projects Modals Tabs
+Projects Modals Tabs Toggle
 ===============
 
 // global variables accessed
@@ -399,24 +424,27 @@ modalTabBtns, modalBody, modalContentItems
 
 const modalTabBtns = document.querySelectorAll(".tab-btn");
 const modalBody = document.querySelector(".modal-body");
-const modalContentItems = document.querySelectorAll(".modal-content-item");
 
-modalBody.addEventListener("click", function (event) {
-  const id = event.target.dataset.id;
-  if (id) {
-    // remove active from other buttons
-    modalTabBtns.forEach(function(btn) {
-      btn.classList.remove("active");
-      // add active class to target button
-      event.target.classList.add("active");
-    });
-    // hide all modalContentItems
-    modalContentItems.forEach(function(article){
-      article.classList.remove("active");
-    });
-    // show active article
-    const element = document.getElementById(id);
-    element.classList.add("active");
-  }
-})
+function loadDynamicModalContent() {
+  modalBody.addEventListener("click", (event) => {
+    const modalContentItems = document.querySelectorAll(".modal-content-item");
+    const id = event.target.dataset.id;
+    if (id) {
+      // remove active from other buttons
+      modalTabBtns.forEach((btn) => {
+        btn.classList.remove("active");
+        // add active class to target button
+        event.target.classList.add("active");
+      });
+      // hide all modalContentItems
+      modalContentItems.forEach((item) => {
+        item.classList.remove("active");
+      });
+      // show active item
+      const item = document.getElementById(id);
+      item.classList.add("active");
+    }
+  });  
+}  
 
+loadDynamicModalContent();
