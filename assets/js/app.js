@@ -139,6 +139,9 @@ const container = document.querySelector(".btn-container");
 // used in projectModals()
 const modalOverlay = document.querySelector(".modal-overlay");
 
+// used in loadDynamicModalContent()
+const modalTabBtns = document.querySelectorAll(".tab-btn");
+const modalBody = document.querySelector(".modal-body");
 
 /*
 =============== 
@@ -403,6 +406,12 @@ function projectsModals() {
 
   addGlobalEventListener("click", ".fas.fa-times", e => {
     if (e.target.parentElement.matches("button.close-btn")) {
+      // reset modal tabs to first being active
+      modalTabBtns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+      modalTabBtns[0].classList.add("active");
+      // hide modal
       modalOverlay.classList.remove("open-modal");
     }
   });
@@ -422,13 +431,10 @@ modalTabBtns, modalBody, modalContentItems
 
 */
 
-const modalTabBtns = document.querySelectorAll(".tab-btn");
-const modalBody = document.querySelector(".modal-body");
-
 function loadDynamicModalContent() {
   modalBody.addEventListener("click", (event) => {
-    const modalContentItems = document.querySelectorAll(".modal-content-item");
     const id = event.target.dataset.id;
+    const modalContentItems = document.querySelectorAll(".modal-content-item");
     if (id) {
       // remove active from other buttons
       modalTabBtns.forEach((btn) => {
