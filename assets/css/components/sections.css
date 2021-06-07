@@ -16,6 +16,11 @@ Sections
   height: 80vh;
 }
 
+#about {
+  height: auto;
+  min-height: 80vh;
+}
+
 /* setting projects height to auto to make room for projects menu */
 #projects {
   height: auto;
