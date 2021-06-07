@@ -1,0 +1,31 @@
+.about-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-pic {
+  width: 200px !important;
+  border-radius: 50%;
+}
+
+.intro-text-container {
+  max-width: 800px;
+  padding: 0rem 2rem;
+}
+
+.body-text-container {
+  max-width: 1000px;
+  margin: 3rem auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .about-intro {
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+
+  .intro-text-container {
+    margin-top: 2rem;
+  }
+}
