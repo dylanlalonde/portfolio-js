@@ -302,7 +302,7 @@ var projectsMenu = function () {
         <header>
           <h4>${project.title}</h4>
           <button class="btn modal-btn" data-id="${project.id}">
-          open modal
+          view project
         </button>
         </header>
         <p class="project-text">

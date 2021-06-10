@@ -4,14 +4,18 @@ Modal
 ===============
 */
 .modal-btn {
-  margin-top: 2rem;
-  background: var(--clr-primary-5);
-  border-color: var(--clr-primary-5);
-  color: var(--clr-white);
+  width: 8rem;
+  height: 3rem;
+  /* background: var(--clr-primary-5); */
+  /* border-color: var(--clr-primary-5); */
+  /* color: var(--clr-white); */
+  margin-bottom: 1rem;
+  border-radius: 0;
 }
 .modal-btn:hover {
   background: transparent;
   color: var(--clr-primary-5);
+  border-color: var(--clr-primary-5);
 }
 .modal-overlay {
   position: fixed;

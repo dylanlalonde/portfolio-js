@@ -5,10 +5,11 @@ Menu
 */
 
 .project-menu {
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 .title {
   text-align: center;
+  padding-top: 2rem;
   margin-bottom: 2rem;
 }
 .underline {
@@ -25,20 +26,21 @@ Menu
 }
 .filter-btn {
   background: transparent;
-  border-color: var(--clr-gold);
+  border-color: var(--clr-grey-1);
   font-size: 1rem;
   text-transform: capitalize;
   margin: 0 0.5rem;
   letter-spacing: 1px;
-  border-radius: var(--radius);
+  border-radius: 0;
   padding: 0.375rem 0.75rem;
-  color: var(--clr-gold);
+  color: var(--clr-grey-1);
   cursor: pointer;
   transition: var(--transition);
 }
 .filter-btn:hover {
-  background: var(--clr-gold);
-  color: var(--clr-white);
+  background: transparent;
+  color: var(--clr-primary-5);
+  border-color: var(--clr-primary-5);
 }
 .section-center {
   width: 90vw;
@@ -52,17 +54,20 @@ Menu
   display: grid;
   gap: 1rem 2rem;
   max-width: 25rem;
+  border: 2px solid var(--clr-grey-1);
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 10px 10px 6px -8px grey;
 }
 .photo {
   object-fit: cover;
   height: 200px;
-  border: 0.25rem solid var(--clr-gold);
-  border-radius: var(--radius);
+  border: 2px solid var(--clr-grey-1);
 }
 .project-info header {
   display: flex;
   justify-content: space-between;
-  border-bottom: 0.5px dotted var(--clr-grey-5);
+  border-bottom: 0.5px solid var(--clr-grey-1);
 }
 .project-info h4 {
   margin-bottom: 0.5rem;
@@ -87,7 +92,8 @@ Menu
 }
 @media screen and (min-width: 1200px) {
   .section-center {
-    width: 95vw;
+    /* width: 95vw; */
+    width: 60vw;
     grid-template-columns: 1fr 1fr;
   }
   .photo {
