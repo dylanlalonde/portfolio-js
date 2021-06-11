@@ -8,6 +8,7 @@ Modal
   height: 3rem;
   margin-bottom: 1rem;
   border-radius: 0;
+  font: revert;
 }
 .modal-btn:hover {
   background: transparent;
