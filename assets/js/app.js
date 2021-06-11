@@ -13,6 +13,7 @@ const links = document.querySelector(".links");
 
 // used in fixedNavbar()
 const navbar = document.getElementById("nav");
+const topLink = document.querySelector(".top-link");
 
 // used in smoothScroll()
 const scrollLinks = document.querySelectorAll(".scroll-link");
@@ -143,6 +144,8 @@ const modalOverlay = document.querySelector(".modal-overlay");
 const modalTabBtns = document.querySelectorAll(".tab-btn");
 const modalBody = document.querySelector(".modal-body");
 
+let modalOpen = false; 
+
 /*
 =============== 
 Set Date
@@ -204,7 +207,7 @@ number of pixels the document has been scrolled vertically.
 
 
 var fixedNavbar = function () {
-  const topLink = document.querySelector(".top-link");
+  // const topLink = document.querySelector(".top-link");
   
   window.addEventListener("scroll", function() {
     const scrollHeight = window.pageYOffset;
@@ -215,7 +218,7 @@ var fixedNavbar = function () {
       navbar.classList.remove("fixed-nav");
     }
   
-    if (scrollHeight > 500) {
+    if (scrollHeight > 500 && modalOpen === false) {
       topLink.classList.add("show-link");
     } else {
       topLink.classList.remove("show-link");
@@ -382,30 +385,37 @@ function projectsModals() {
       `<!-- single item -->
         <div class="modal-content-item active" id="history">
           <h4>history</h4>
-          <p>${targetProject.history}</p>
+          <p class="modal-content-text">${targetProject.history}</p>
         </div>
         <!-- end of single item -->
         <!-- single item -->
         <div class="modal-content-item" id="vision">
           <h4>vision</h4>
-          <p>${targetProject.vision}</p>
+          <p class="modal-content-text">${targetProject.vision}</p>
         </div>
         <!-- end of single item -->
         <!-- single item -->
         <div class="modal-content-item" id="goals">
           <h4>goals</h4>
-          <p>${targetProject.goals}</p>
+          <p class="modal-content-text">${targetProject.goals}</p>
         </div>
         <!-- end of single item -->`;
     
     if (e.target.matches(".btn.modal-btn")) {
+      modalOpen = true;
+
       modalContentDiv.innerHTML = modalContent;
       modalOverlay.classList.add("open-modal");
+
+      // hide link to top
+      topLink.classList.remove("show-link"); 
     }
   });
 
   addGlobalEventListener("click", ".fas.fa-times", e => {
     if (e.target.parentElement.matches("button.close-btn")) {
+      modalOpen = false;
+
       // reset modal tabs to first being active
       modalTabBtns.forEach((btn) => {
         btn.classList.remove("active");
@@ -413,6 +423,9 @@ function projectsModals() {
       modalTabBtns[0].classList.add("active");
       // hide modal
       modalOverlay.classList.remove("open-modal");
+
+      // show link to top
+      topLink.classList.add("show-link");
     }
   });
 
