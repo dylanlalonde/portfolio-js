@@ -6,9 +6,6 @@ Modal
 .modal-btn {
   width: 8rem;
   height: 3rem;
-  /* background: var(--clr-primary-5); */
-  /* border-color: var(--clr-primary-5); */
-  /* color: var(--clr-white); */
   margin-bottom: 1rem;
   border-radius: 0;
 }
@@ -23,7 +20,6 @@ Modal
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: rgba(73, 166, 233, 0.5); */
   background: rgba(0, 0, 0, 0.8);
   display: grid;
   place-items: center;
@@ -38,17 +34,9 @@ Modal
 }
 .modal-container {
   background: var(--clr-white);
-  /* border-radius: var(--radius); */
   border: 2px solid black;
-  /* width: 90vw; */
-  /* height: 30vh; */
   width: auto;
   height: auto;
-  /* max-width: var(--fixed-width);
-  text-align: center;
-  display: grid;
-  place-items: center;
-  position: relative; */
 }
 
 .modal-center {
@@ -82,7 +70,6 @@ Modal Content
   margin-bottom: 2rem;
 }
 .modal-img img {
-  /* border-radius: var(--radius); */
   object-fit: cover;
   height: 20rem;
 }
@@ -91,23 +78,12 @@ Modal Content
     margin-bottom: 0;
   }
 
-  .modal-center {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem; */
-  }
+  /* .modal-center {} */
 }
 .modal-body {
   background: var(--clr-white);
-  /* border-radius: var(--radius); */
-  /* display: grid;
-  grid-template-rows: auto 1fr; */
 }
 .modal-btn-container {
-  /* border-top-left-radius: var(--radius);
-  border-top-right-radius: var(--radius); */
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr; */
   display: flex;
   justify-content: center;
 }
@@ -136,7 +112,6 @@ Modal Content
   color: var(--clr-primary-5);
 }
 .modal-content {
-  /* border-bottom-left-radius: var(--radius); */
   padding: 2rem 1.5rem;
   border-bottom: 2px solid black;
 }
@@ -155,7 +130,6 @@ Modal Content
 @media screen and (max-width: 768px) {
   .modal-content-text {
     height: 15vh;
-    /* background: red; */
     overscroll-behavior: auto;
     overflow-y: scroll;
   }
