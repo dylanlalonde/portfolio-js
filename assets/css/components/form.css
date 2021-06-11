@@ -76,8 +76,7 @@ textarea {
   border: solid 3px #474544;
   max-width: 768px;
   margin: 60px auto;
-  position: relative;
-  z-index: -1;
+  /* position: relative; */
 }
 
 form {
@@ -171,9 +170,9 @@ select::-ms-expand {
   width: 100%;
 }
 
-.telephone {
+/* .telephone {
   width: 100%;
-}
+} */
 
 textarea {
 	line-height: 150%;
