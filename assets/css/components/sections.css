@@ -12,7 +12,7 @@ Sections
 }
 #projects,
 #about,
-#contact {
+#connect {
   min-height: 80vh;
   height: auto;
 }
@@ -22,7 +22,7 @@ Sections
   height: auto;
 }
 
-#contact {
+#connect {
   background: var(--clr-white);
   padding-bottom: 1rem;
 }
