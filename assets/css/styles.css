@@ -21,5 +21,7 @@ Components
 @import url(./components/top-link.css);
 @import url(./components/menu.css);
 @import url(./components/modal.css);
-@import url(./components/about.css);
+@import url(./components/bio.css);
+@import url(./components/connect.css);
 @import url(./components/form.css);
+@import url(./components/social-icons.css);

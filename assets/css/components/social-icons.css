@@ -1,0 +1,19 @@
+.social-icons {
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.icons-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.github-icon {
+  width: 50px !important;
+  margin-right: 2rem;
+}
+
+.linkedin-icon {
+  width: 50px !important;
+}

@@ -11,7 +11,7 @@ Sections
   color: var(--clr-secondary);
 }
 #projects,
-#about,
+#bio,
 #connect {
   min-height: 80vh;
   height: auto;
@@ -22,7 +22,7 @@ Sections
   height: auto;
 }
 
-#connect {
+#bio {
   background: var(--clr-white);
   padding-bottom: 1rem;
 }
