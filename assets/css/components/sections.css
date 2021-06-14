@@ -22,6 +22,7 @@ Sections
   height: auto;
 }
 
-#about {
+#contact {
   background: var(--clr-white);
+  padding-bottom: 1rem;
 }

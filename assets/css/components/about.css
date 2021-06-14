@@ -14,12 +14,12 @@
 }
 
 .intro-text-container {
-  max-width: 800px;
+  max-width: 700px;
   padding: 0rem 2rem;
 }
 
 .body-text-container {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 3rem auto;
 }
 
@@ -50,5 +50,20 @@
     max-width: 800px;
     margin: 0;
     padding: 0 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-section-content {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .intro-text-container {
+    padding: 0 2rem;
+  }
+
+  .body-text-container {
+    padding: 0 2rem;
   }
 }

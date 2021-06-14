@@ -41,6 +41,7 @@ textarea {
   max-width: 768px;
   margin: 60px auto;
   /* position: relative; */
+  background: var(--dark-shadow);
 }
 
 form {
@@ -197,6 +198,10 @@ textarea {
   #container {
     margin: 20px auto;
     width: 95%;
+  }
+
+  form {
+    margin: 15px 0;
   }
 }
 
