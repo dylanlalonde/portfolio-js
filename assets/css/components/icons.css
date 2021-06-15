@@ -7,7 +7,7 @@
   justify-content: space-evenly;
 }
 
-.skill-icons {
+.skills-icons {
   margin-top: 3rem;
   padding-bottom: 2rem;
 }
@@ -17,7 +17,7 @@
   padding-bottom: 2rem;
 }
 
-.skill-icons-container {
+.skills-icons-container {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
@@ -25,6 +25,16 @@
 
 .tools-icons-container {
   margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.skills-icons-title {
+  display: flex;
+  justify-content: center;
+}
+
+.tools-icons-title {
   display: flex;
   justify-content: center;
 }
@@ -37,29 +47,85 @@
   width: 50px !important;
 }
 
+.javascript-icon {
+  width: 50px;
+  height: 50px;
+  background: url("../../img/icons/javascript-50px.png") no-repeat;
+  display: inline-block;
+}
+
+.javascript-icon:hover {
+  background: url("../../img/icons/javascript-50px-colored.png") no-repeat;
+}
+
+.html-icon {
+  width: 50px;
+  height: 50px;
+  background: url("../../img/icons/html5-50px.png") no-repeat;
+  display: inline-block;
+}
+
+.html-icon:hover {
+  background: url("../../img/icons/html5-50px-colored.png") no-repeat;
+}
+
+.css-icon {
+  width: 50px;
+  height: 50px;
+  background: url("../../img/icons/css3-50px.png") no-repeat;
+  display: inline-block;
+}
+
+.css-icon:hover {
+  background: url("../../img/icons/css3-50px-colored.png") no-repeat;
+}
+
+.nodejs-icon {
+  width: 50px;
+  height: 50px;
+  background: url("../../img/icons/nodejs-50px.png") no-repeat;
+  display: inline-block;
+}
+
+.nodejs-icon:hover {
+  background: url("../../img/icons/nodejs-50px-colored.png") no-repeat;
+}
+
+.git-icon {
+  width: 50px;
+  height: 50px;
+  background: url("../../img/icons/git-50px.png") no-repeat;
+  display: inline-block;
+}
+
+.git-icon:hover {
+  background: url("../../img/icons/git-50px-colored.png") no-repeat;
+}
+
+.notion-icon {
+  width: 50px;
+  height: 50px;
+  background: url("../../img/icons/notion-50px.png") no-repeat;
+  display: inline-block;
+}
+
+.notion-icon:hover {
+  background: url("../../img/icons/notion-50px-colored.png") no-repeat;
+}
+
+.figma-icon {
+  width: 50px;
+  height: 50px;
+  background: url("../../img/icons/figma-50px.png") no-repeat;
+  display: inline-block;
+}
+
+.figma-icon:hover {
+  background: url("../../img/icons/figma-50px-colored.png") no-repeat;
+}
+
 @media screen and (max-width: 768px) {
   .icons {
     flex-direction: column;
   }
 }
-
-/* .javascript-icon {
-}
-
-.html-icon {
-}
-
-.css-icon {
-}
-
-.nodejs-icon {
-}
-
-.git-icon {
-}
-
-.figma-icon {
-}
-
-.notion-icon {
-} */
