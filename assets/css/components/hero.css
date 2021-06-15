@@ -27,8 +27,23 @@ Hero
   margin: 0 auto;
   margin-bottom: 1.25rem;
 }
+.cta {
+  background-color: white;
+  color: var(--clr-secondary);
+}
+.cta:hover {
+  background: transparent;
+  color: white;
+}
+
 @media screen and (min-width: 768px) {
   .container p {
     max-width: 40rem;
+  }
+}
+
+@media screen and (max-width: 419px) {
+  .cta {
+    margin-top: 1rem;
   }
 }

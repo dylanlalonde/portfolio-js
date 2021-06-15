@@ -5,7 +5,7 @@ footer {
 footer p {
   color: var(--clr-white);
   text-align: center;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   letter-spacing: var(--spacing);
   margin-bottom: 0;
 }
