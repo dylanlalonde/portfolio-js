@@ -1,0 +1,65 @@
+.icons {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.skill-icons {
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.tools-icons {
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.skill-icons-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.tools-icons-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.tool-icon {
+  width: 50px !important;
+}
+
+.skill-icon {
+  width: 50px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .icons {
+    flex-direction: column;
+  }
+}
+
+/* .javascript-icon {
+}
+
+.html-icon {
+}
+
+.css-icon {
+}
+
+.nodejs-icon {
+}
+
+.git-icon {
+}
+
+.figma-icon {
+}
+
+.notion-icon {
+} */
