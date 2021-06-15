@@ -41,10 +41,24 @@
 
 .tool-icon {
   width: 50px !important;
+  padding: 0rem 2rem;
+  position: relative;
 }
 
 .skill-icon {
   width: 50px !important;
+  padding: 0rem 2rem;
+  position: relative;
+}
+
+.icon-text {
+  display: none;
+  position: absolute;
+  top: 56px;
+  font-family: monospace;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--clr-secondary);
 }
 
 .javascript-icon {
@@ -52,10 +66,17 @@
   height: 50px;
   background: url("../../img/icons/javascript-50px.png") no-repeat;
   display: inline-block;
+  position: relative;
 }
 
 .javascript-icon:hover {
   background: url("../../img/icons/javascript-50px-colored.png") no-repeat;
+  transition: var(--transition);
+}
+
+.javascript-icon:hover span {
+  display: block;
+  left: -29px;
 }
 
 .html-icon {
@@ -67,6 +88,12 @@
 
 .html-icon:hover {
   background: url("../../img/icons/html5-50px-colored.png") no-repeat;
+  transition: var(--transition);
+}
+
+.html-icon:hover span {
+  display: block;
+  left: -1px;
 }
 
 .css-icon {
@@ -78,6 +105,12 @@
 
 .css-icon:hover {
   background: url("../../img/icons/css3-50px-colored.png") no-repeat;
+  transition: var(--transition);
+}
+
+.css-icon:hover span {
+  display: block;
+  left: 4px;
 }
 
 .nodejs-icon {
@@ -89,6 +122,12 @@
 
 .nodejs-icon:hover {
   background: url("../../img/icons/nodejs-50px-colored.png") no-repeat;
+  transition: var(--transition);
+}
+
+.nodejs-icon:hover span {
+  display: block;
+  left: -6px;
 }
 
 .git-icon {
@@ -100,6 +139,12 @@
 
 .git-icon:hover {
   background: url("../../img/icons/git-50px-colored.png") no-repeat;
+  transition: var(--transition);
+}
+
+.git-icon:hover span {
+  display: block;
+  left: 9px;
 }
 
 .notion-icon {
@@ -111,6 +156,12 @@
 
 .notion-icon:hover {
   background: url("../../img/icons/notion-50px-colored.png") no-repeat;
+  transition: var(--transition);
+}
+
+.notion-icon:hover span {
+  display: block;
+  left: -5px;
 }
 
 .figma-icon {
@@ -122,6 +173,12 @@
 
 .figma-icon:hover {
   background: url("../../img/icons/figma-50px-colored.png") no-repeat;
+  transition: var(--transition);
+}
+
+.figma-icon:hover span {
+  display: block;
+  left: -2px;
 }
 
 @media screen and (max-width: 768px) {

@@ -25,4 +25,5 @@ Sections
 #bio {
   background: var(--clr-white);
   padding-bottom: 1rem;
+  height: 92vh;
 }
