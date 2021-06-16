@@ -110,7 +110,7 @@
 
 .css-icon:hover span {
   display: block;
-  left: 4px;
+  left: 3px;
 }
 
 .nodejs-icon {
@@ -179,6 +179,7 @@
 .figma-icon:hover span {
   display: block;
   left: -2px;
+  transition: var(--transition);
 }
 
 @media screen and (max-width: 768px) {
