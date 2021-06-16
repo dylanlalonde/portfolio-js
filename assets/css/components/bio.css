@@ -21,23 +21,35 @@
 .intro-pic {
   width: 200px !important;
   border-radius: 50%;
+  position: absolute;
+}
+
+.intro-pic-container {
+  position: relative;
 }
 
 .img-circle {
-  background-color: white;
-  width: 200px;
-  height: 200px;
+  background-color: var(--clr-secondary);
+  width: 205px;
+  height: 205px;
   border-radius: 50%;
 }
 
 .intro-text-container {
   max-width: 700px;
   padding: 0rem 2rem;
+  font-family: "Raleway", sans-serif;
 }
 
 .body-text-container {
   max-width: 900px;
   margin: 3rem auto;
+  font-family: "Raleway", sans-serif;
+}
+
+.bio-body-text {
+  border: 2px solid black;
+  padding: 1rem;
 }
 
 @media screen and (max-width: 1199px) {
@@ -83,5 +95,9 @@
 
   .body-text-container {
     padding: 0 2rem;
+  }
+
+  .intro-text {
+    text-align: center;
   }
 }
