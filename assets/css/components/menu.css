@@ -86,18 +86,12 @@ Menu
     gap: 0 1.25rem;
     max-width: 40rem;
   }
-  .photo {
-    height: 175px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .section-center {
     /* width: 95vw; */
     width: 60vw;
     grid-template-columns: 1fr 1fr;
-  }
-  .photo {
-    height: 150px;
   }
 }
 /* prevent filter buttons from growing off screen on mobile */
