@@ -48,9 +48,9 @@ const projects = [
     category: "drupal",
     img: "bettertoknow.png",
     desc: `A sexual health website I made for the Yukon Territorial Government using Drupal CMS.`,
-    details: `Yukon Better to Know is a `,
-    tech: ``,
-    lessons: ``,
+    details: `Better To Know is a multilingual sexual health and education information website I built for the Yukon government using the Drupal CMS while working at Outcrop Communications in 2019. Through this site, the residents of the Yukon Territory are able to access a plethora of information ranging from sexual education and health to relationships and consent. There is also access to a help line, and an anonymous contact form for questions. The Yukon government is able to log in and add different types of content to the site.`,
+    tech: `We installed Drupal 8, (A CMS built in PHP, which uses SQL as a DB) in an NGINX server. development and production deployments as well as our code repositories were hosted on Beanstalk. First I configured the content types that the client would be able to upload. Then, starting with a Theme called Barrio (based off of Bootstrap 4), I began styling the appearance. Then I used the Drupal "templating language", Twig, to customize the output. Finally, I used sCSS and JavaScript to match the designs provided by the design team. I used grunt to minify and lint the repository before pushing with git.`,
+    lessons: `I learned the whole process of setting up a Drupal website from scratch. I also learned how to use Twig templating language, and saw the similarities between it and ERB in Ruby (which I learned in my full stack development bootcamp). I also learned a lot about the processes of going through preliminary meetings with clients, coming up with estimates for how long the work would take, making sitemaps and wireframes, and communicating back and forth with clients during and after the build.`,
   },
   {
     id: 4,
