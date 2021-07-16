@@ -88,9 +88,9 @@ const projects = [
     category: "nodeJS",
     img: "crawler.png",
     desc: `A web crawler built from scratch using NodeJS that automates the review of hundreds of blog articles.`,
-    details: ``,
-    tech: ``,
-    lessons: ``,
+    details: `I built Spectacular Crawler to automate the otherwise lengthy process of reviewing some of the content heavy sites at Outcrop Communications. Some websites had hundreds of blog articles and this crawler would check each for broken links and missing videos before recording the results in a CSV spreadsheet. This crawler turned a ~20 hour task into a <5 minute task.`,
+    tech: `I built the crawler using NodeJS, Javascript, and Puppeteer (a headless Chrome Node.js API). I stored the crawled data on a CSV file. I used git and structured the project as best I could, with an IO folder, a features folder, and a data folder. I added features one at a time.`,
+    lessons: `I learned a lot about asynchronous JavaScript doing this project. I also learned a fair bit about structuring a project.`,
   },
   // // {
   // //   id: 8,
