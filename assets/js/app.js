@@ -422,6 +422,25 @@ function projectsModals() {
     }
   });
 
+  // close modal on click greyspace
+  addGlobalEventListener("click", ".modal-overlay", e => {
+    console.log("modal overlay clicked")
+    if (e.target.matches(".modal-overlay.open-modal")) {
+      modalOpen = false;
+
+      // reset modal tabs to first being active
+      modalTabBtns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+      modalTabBtns[0].classList.add("active");
+      // hide modal
+      modalOverlay.classList.remove("open-modal");
+
+      // show link to top
+      topLink.classList.add("show-link");
+    }
+  });
+
 }
 
 projectsModals();
