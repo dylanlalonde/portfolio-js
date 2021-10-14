@@ -14,8 +14,6 @@ const links = document.querySelector(".links");
 // used in fixedNavbar()
 const navbar = document.getElementById("nav");
 const topLink = document.querySelector(".top-link");
-const transparentLogo = document.querySelector(".logo-white");
-const logoWithBackground = document.querySelector(".logo-blk");
 
 // used in smoothScroll()
 const scrollLinks = document.querySelectorAll(".scroll-link");
@@ -209,14 +207,8 @@ var fixedNavbar = function () {
     const navHeight = navbar.getBoundingClientRect().height;
     if (scrollHeight > navHeight) {
       navbar.classList.add("fixed-nav");
-      // handle logo transparency toggle
-      logoWithBackground.classList.remove("hidden-logo");
-      transparentLogo.classList.add("hidden-logo");
     } else {
       navbar.classList.remove("fixed-nav");
-      // handle logo transparency toggle
-      transparentLogo.classList.remove("hidden-logo");
-      logoWithBackground.classList.add("hidden-logo");
     }
 
     if (scrollHeight > 500 && modalOpen === false) {

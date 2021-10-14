@@ -9,7 +9,7 @@ Hero
 #home {
   min-height: 100vh;
   background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../../img/backgrounds/hero-bcg.jpeg) center/cover no-repeat;
+  url(../../img/backgrounds/hero-bkg-beach.jpg) center/cover no-repeat;
 }
 .banner {
   min-height: 100vh;
