@@ -44,8 +44,17 @@ nav {
   color: var(--clr-secondary);
 }
 .logo {
-  height: 50px;
+  height: 80px;
 }
+.hidden-logo {
+  display: none;
+}
+/* .logo-blk-bkg {
+
+}
+.logo-transparent-bkg {
+
+} */
 .links-container {
   height: 0;
   overflow: hidden;
