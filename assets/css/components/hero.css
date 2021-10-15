@@ -36,7 +36,12 @@ Hero
   background: transparent;
   color: white;
 }
-
+.cta-callout {
+  padding-top: 1rem;
+}
+.cta-callout-text {
+  font-weight: bold;
+}
 @media screen and (min-width: 768px) {
   .container p {
     max-width: 40rem;

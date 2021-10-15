@@ -368,11 +368,16 @@ Projects Modals
 */
 
 let modalContentDiv = document.querySelector(".modal-content");
+let modalImgDiv = document.querySelector(".modal-img");
 
 function projectsModals() {
   addGlobalEventListener("click", ".btn.modal-btn", e => {
     let itemId = e.target.attributes[1].value;
     let targetProject = projects[itemId - 1];
+
+    console.log(targetProject);
+
+    let modalImg = `<img src="./assets/img/projects/${targetProject.img}" alt="modal picture" />`
 
     let modalContent =
       `<!-- single item -->
@@ -397,6 +402,7 @@ function projectsModals() {
     if (e.target.matches(".btn.modal-btn")) {
       modalOpen = true;
 
+      modalImgDiv.innerHTML = modalImg;
       modalContentDiv.innerHTML = modalContent;
       modalOverlay.classList.add("open-modal");
 
