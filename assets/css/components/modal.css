@@ -73,6 +73,7 @@ Modal Content
 .modal-img img {
   object-fit: cover;
   height: 20rem;
+  background-position: top;
 }
 @media screen and (min-width: 992px) {
   .modal-img {

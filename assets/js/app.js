@@ -26,7 +26,8 @@ const projects = [
     id: 1,
     title: "Trellis",
     category: "wordpress",
-    img: "trellis.png",
+    previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/trellis.png",
+    modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/trellis.png",
     desc: `A Wordpress website I made for the Japanese education non-profit, Trellis.`,
     details: `Trellis.ngo is a website I built for the Japanese education non-profit organization I cofounded in Vietnam in 2017. The organization enabled access to english teaching to disadvantaged vietnamese youth. The multi-language website contains information about our program, a blog (which I also staffed), a signup form and a payment portal. This website enabled us to fully book our program for 2 years from launch.`,
     tech: `I used <b>Wordpress</b> as a content management system. Wordpress 'Widgets' used were: <b>WPML Multilingual</b> for multiple language support and <b>Yoast</b> for SEO. I used <b>Stripe</b> for payment processing. Lastly, I used <b>Google Analytics</b> for analytics. For hosting and domain registration I used <b>Bluehost</b>.`,
@@ -36,7 +37,8 @@ const projects = [
     id: 2,
     title: "GoodTravel",
     category: "ruby on rails",
-    img: "goodtravel2.png",
+    previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/goodtravel.png",
+    modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/goodtravel.png",
     desc: `A tour booking web application built with Ruby on Rails.`,
     details: `GoodTravel is a web application I built as a solution to the exploitative nature of the travel industry. I built it in 2018 while attending a full stack development bootcamp, Le Wagon. The web application allows users to sign up and create an account, then they can view all the tours, and book one. The commission from the tour booking gets calculated and when this project goes live will be distributed to local causes.`,
     tech: `I used the <b>Ruby on Rails</b> framework and managed the <b>Postgres</b> database with <b>ActiveRecord</b> (Rails' ORM). I used <b>SASS</b> to preprocess the CSS. I used <b>Heroku</b> to manage the deployments, and <b>Cloudinary</b> to host the media and serve it conditionally. I used <b>git</b> to manage the codebase and <b>Github</b> to review the code pushed by my 2 team members.`,
@@ -46,7 +48,8 @@ const projects = [
     id: 3,
     title: "Better To Know",
     category: "drupal",
-    img: "bettertoknow.png",
+    previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/btk.png",
+    modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/btk.png",
     desc: `A sexual health website I made for the Yukon Territorial Government using Drupal CMS.`,
     details: `Better To Know is a multilingual sexual health and education information website I built for the Yukon government using the Drupal CMS while working at Outcrop Communications in 2019. Through this site, the residents of the Yukon Territory are able to access a plethora of information ranging from sexual education and health to relationships and consent. There is also access to a help line, and an anonymous contact form for questions. The Yukon government is able to log in and add different types of content to the site.`,
     tech: `We installed Drupal 8, (A CMS built in PHP, which uses SQL as a DB) in an NGINX server. development and production deployments as well as our code repositories were hosted on Beanstalk. First I configured the content types that the client would be able to upload. Then, starting with a Theme called Barrio (based off of Bootstrap 4), I began styling the appearance. Then I used the Drupal "templating language", Twig, to customize the output. Finally, I used sCSS and JavaScript to match the designs provided by the design team. I used grunt to minify and lint the repository before pushing with git.`,
@@ -56,7 +59,8 @@ const projects = [
     id: 4,
     title: "Folk on the Rocks",
     category: "drupal",
-    img: "folkontherocks.png",
+    previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/fotr.png",
+    modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/fotr.png",
     desc: `A Drupal website made for the biggest music festival in Northern Canada. `,
     details: ``,
     tech: ``,
@@ -66,7 +70,8 @@ const projects = [
     id: 5,
     title: "Wekʼèezhìi Renewable Resources Board",
     category: "drupal",
-    img: "wrrb.png",
+    previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/wrrb.png",
+    modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/wrrb.png",
     desc: `A website I built using Drupal for one of the largest wildlife and habitat monitoring boards in Northern Canada`,
     details: ``,
     tech: ``,
@@ -74,19 +79,43 @@ const projects = [
   },
   {
     id: 6,
-    title: "Diavik Mine Tour Companion",
-    category: "nodeJS",
-    img: "diavik.png",
-    desc: `A progressive web application I built from scratch for one of the world's biggest mining companies.`,
-    details: `This is an offline-first Progressive Web Application I built for Rio Tinto's Diavik Diamond mine, the biggest open pit diamond mine in North America. I built this while working at Outcrop Communications. The application caches up to a gig of media files and allows the visitor to learn many details about the mine. The app runs on the Apple iPads provided during the in-flight portion of their tour.`,
+    title: "Tlicho Investment Corporation",
+    category: "drupal",
+    previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/tic.png",
+    modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/tic.png",
+    desc: ``,
+    details: ``,
     tech: ``,
     lessons: ``,
   },
   {
     id: 7,
-    title: "spectacular crawler",
+    title: "Rio Tinto Mine Tour Companion App",
     category: "nodeJS",
-    img: "crawler.png",
+    previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/riotinto.png",
+    modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/riotinto.png",
+    desc: `A PWA I built from scratch for one of the world's biggest mining companies.`,
+    details: `This is an offline-first Progressive Web Application I built for Rio Tinto's Diavik Diamond mine, the biggest open pit diamond mine in North America. I built this while working at Outcrop Communications. The application caches up to a gig of media files and allows the visitor to learn many details about the mine. The app runs on the Apple iPads provided during the in-flight portion of their tour.`,
+    tech: ``,
+    lessons: ``,
+  },
+  {
+    id: 8,
+    title: "article crawler",
+    category: "nodeJS",
+    previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/article-crawler.png",
+    modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/article-crawler.png",
+    desc: `A web crawler built from scratch using NodeJS that automates the review of hundreds of blog articles.`,
+    details: `I built Spectacular Crawler to automate the otherwise lengthy process of reviewing some of the content heavy sites at Outcrop Communications. Some websites had hundreds of blog articles and this crawler would check each for broken links and missing videos before recording the results in a CSV spreadsheet. This crawler turned a ~20 hour task into a <5 minute task.`,
+    tech: `I built the crawler using NodeJS, Javascript, and Puppeteer (a headless Chrome Node.js API). I stored the crawled data on a CSV file. I used git and structured the project as best I could, with an IO folder, a features folder, and a data folder. I added features one at a time.`,
+    lessons: `I learned a lot about asynchronous JavaScript doing this project. I also learned a fair bit about structuring a project.`,
+  },
+  {
+    id: 9,
+    title: "Freeman Foundation",
+    category: "React",
+    previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/freeman.png",
+    modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/freeman.png",
     desc: `A web crawler built from scratch using NodeJS that automates the review of hundreds of blog articles.`,
     details: `I built Spectacular Crawler to automate the otherwise lengthy process of reviewing some of the content heavy sites at Outcrop Communications. Some websites had hundreds of blog articles and this crawler would check each for broken links and missing videos before recording the results in a CSV spreadsheet. This crawler turned a ~20 hour task into a <5 minute task.`,
     tech: `I built the crawler using NodeJS, Javascript, and Puppeteer (a headless Chrome Node.js API). I stored the crawled data on a CSV file. I used git and structured the project as best I could, with an IO folder, a features folder, and a data folder. I added features one at a time.`,
@@ -293,7 +322,7 @@ var projectsMenu = function () {
   function displayProjectMenuItems(projects) {
     let displayProjectsMenu = projects.map((project) => {
       return `<article class="project-item">
-      <img src="./assets/img/projects/${project.img}" class="photo" alt="${project.title}">
+      <img src="${project.previewImg}" class="photo" alt="${project.title}">
       <div class="project-info">
         <header>
           <h4>${project.title}</h4>
@@ -377,7 +406,7 @@ function projectsModals() {
 
     console.log(targetProject);
 
-    let modalImg = `<img src="./assets/img/projects/${targetProject.img}" alt="modal picture" />`
+    let modalImg = `<img src="${targetProject.modalImg}" alt="modal picture" />`
 
     let modalContent =
       `<!-- single item -->
