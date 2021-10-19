@@ -74,14 +74,9 @@ Icons
   position: relative;
 }
 
-.javascript-icon:hover {
-  background: url("../../img/icons/javascript-50px-colored.png") no-repeat;
-  transition: var(--transition);
-}
-
 .javascript-icon:hover span {
   display: block;
-  left: -29px;
+  left: -26px;
 }
 
 .html-icon {
@@ -89,11 +84,6 @@ Icons
   height: 50px;
   background: url("../../img/icons/html5-50px.png") no-repeat;
   display: inline-block;
-}
-
-.html-icon:hover {
-  background: url("../../img/icons/html5-50px-colored.png") no-repeat;
-  transition: var(--transition);
 }
 
 .html-icon:hover span {
@@ -108,11 +98,6 @@ Icons
   display: inline-block;
 }
 
-.css-icon:hover {
-  background: url("../../img/icons/css3-50px-colored.png") no-repeat;
-  transition: var(--transition);
-}
-
 .css-icon:hover span {
   display: block;
   left: 3px;
@@ -125,14 +110,21 @@ Icons
   display: inline-block;
 }
 
-.nodejs-icon:hover {
-  background: url("../../img/icons/nodejs-50px-colored.png") no-repeat;
-  transition: var(--transition);
-}
-
 .nodejs-icon:hover span {
   display: block;
   left: -6px;
+}
+
+.react-icon {
+  width: 50px;
+  height: 50px;
+  background: url("../../img/icons/react-50px.png") no-repeat;
+  display: inline-block;
+}
+
+.react-icon:hover span {
+  display: block;
+  left: 0px;
 }
 
 .git-icon {
@@ -140,11 +132,6 @@ Icons
   height: 50px;
   background: url("../../img/icons/git-50px.png") no-repeat;
   display: inline-block;
-}
-
-.git-icon:hover {
-  background: url("../../img/icons/git-50px-colored.png") no-repeat;
-  transition: var(--transition);
 }
 
 .git-icon:hover span {
@@ -159,11 +146,6 @@ Icons
   display: inline-block;
 }
 
-.notion-icon:hover {
-  background: url("../../img/icons/notion-50px-colored.png") no-repeat;
-  transition: var(--transition);
-}
-
 .notion-icon:hover span {
   display: block;
   left: -5px;
@@ -174,11 +156,6 @@ Icons
   height: 50px;
   background: url("../../img/icons/figma-50px.png") no-repeat;
   display: inline-block;
-}
-
-.figma-icon:hover {
-  background: url("../../img/icons/figma-50px-colored.png") no-repeat;
-  transition: var(--transition);
 }
 
 .figma-icon:hover span {
