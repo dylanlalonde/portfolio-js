@@ -32,6 +32,7 @@ Hero
 }
 .hero-text {
   font-size: 1rem;
+  font-weight: 300;
   padding: 1rem;
 }
 .cta {
