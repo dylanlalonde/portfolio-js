@@ -27,6 +27,13 @@ Hero
   margin: 0 auto;
   margin-bottom: 1.25rem;
 }
+.hero-title {
+  padding-bottom: 2rem;
+}
+.hero-text {
+  font-size: 1rem;
+  padding: 1rem;
+}
 .cta {
   background-color: white;
   color: var(--clr-secondary);
@@ -36,10 +43,14 @@ Hero
   background: transparent;
   color: white;
 }
+#view-projects-btn {
+  margin-top: 2rem;
+}
 .cta-callout {
   padding-top: 1rem;
 }
 .cta-callout-text {
+  padding-top: 1rem;
   font-weight: bold;
 }
 @media screen and (min-width: 768px) {
@@ -48,7 +59,6 @@ Hero
     font-size: 1.25rem;
   }
 }
-
 @media screen and (max-width: 419px) {
   .cta {
     margin-top: 1rem;
