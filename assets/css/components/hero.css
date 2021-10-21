@@ -38,7 +38,7 @@ Hero
   margin-left: 2rem;
   margin-right: 2rem;
   background-color: white;
-  color: var(--clr-secondary);
+  color: var(--clr-black);
   font-weight: bold;
 }
 .cta:hover {
