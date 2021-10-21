@@ -13,7 +13,6 @@ Sections
 #projects,
 #bio,
 #connect {
-  min-height: 80vh;
   height: auto;
 }
 
@@ -23,9 +22,13 @@ Sections
 }
 
 #bio {
-  /* background: var(--clr-white); */
   padding-bottom: 1rem;
-  min-height: 92vh;
+  /* min-height: 92vh; */
   height: auto;
-  /* background: linear-gradient(70deg, blue, pink); */
+}
+
+@media screen and (max-height: 1080px) {
+  #bio {
+    min-height: 92vh;
+  }
 }
