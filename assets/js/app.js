@@ -243,7 +243,6 @@ var fixedNavbar = function () {
       whiteLogo.classList.remove("hide-white-logo");
       blkLogo.classList.add("hide-blk-logo");
     }
-
     if (scrollHeight > 500 && modalOpen === false) {
       topLink.classList.add("show-link");
     } else {
@@ -284,15 +283,12 @@ var smoothScroll = function () {
       const containerHeight = linksContainer.getBoundingClientRect().height;
       const fixedNav = navbar.classList.contains("fixed-nav");
       let position = element.offsetTop - navHeight;
-
       if (!fixedNav) {
         position = position - navHeight;
       }
-
       if (navHeight > 82) {
         position = position + containerHeight;
       }
-
       window.scrollTo({
         left: 0,
         top: position
@@ -351,13 +347,11 @@ var projectsMenu = function () {
       }
       return values;
     }, ['all']);
-
     const categoryBtns = categories.map((category) => {
       return `<button class="filter-btn" type="button" data-id="${category}">${category}</button>`
     }).join("");
     container.innerHTML = categoryBtns;
     const filterBtns = container.querySelectorAll(".filter-btn");
-
     // filter items
     filterBtns.forEach((btn) => {
       btn.addEventListener("click", (event) => {
@@ -407,9 +401,6 @@ function projectsModals() {
   addGlobalEventListener("click", ".btn.modal-btn", e => {
     let itemId = e.target.attributes[1].value;
     let targetProject = projects[itemId - 1];
-
-    console.log(targetProject);
-
     let modalImg = `<img src="${targetProject.modalImg}" alt="modal picture" />`
 
     let modalContent =
@@ -434,11 +425,9 @@ function projectsModals() {
 
     if (e.target.matches(".btn.modal-btn")) {
       modalOpen = true;
-
       modalImgDiv.innerHTML = modalImg;
       modalContentDiv.innerHTML = modalContent;
       modalOverlay.classList.add("open-modal");
-
       // hide link to top
       topLink.classList.remove("show-link");
     }
@@ -447,7 +436,6 @@ function projectsModals() {
   addGlobalEventListener("click", ".fas.fa-times", e => {
     if (e.target.parentElement.matches("button.close-btn")) {
       modalOpen = false;
-
       // reset modal tabs to first being active
       modalTabBtns.forEach((btn) => {
         btn.classList.remove("active");
@@ -455,7 +443,6 @@ function projectsModals() {
       modalTabBtns[0].classList.add("active");
       // hide modal
       modalOverlay.classList.remove("open-modal");
-
       // show link to top
       topLink.classList.add("show-link");
     }
@@ -463,10 +450,8 @@ function projectsModals() {
 
   // close modal on click greyspace
   addGlobalEventListener("click", ".modal-overlay", e => {
-    console.log("modal overlay clicked")
     if (e.target.matches(".modal-overlay.open-modal")) {
       modalOpen = false;
-
       // reset modal tabs to first being active
       modalTabBtns.forEach((btn) => {
         btn.classList.remove("active");
@@ -474,7 +459,6 @@ function projectsModals() {
       modalTabBtns[0].classList.add("active");
       // hide modal
       modalOverlay.classList.remove("open-modal");
-
       // show link to top
       topLink.classList.add("show-link");
     }
