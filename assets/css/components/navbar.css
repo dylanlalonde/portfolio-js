@@ -43,12 +43,6 @@ nav {
 .nav-toggle:hover {
   color: var(--clr-secondary);
 }
-.logo {
-  height: 80px;
-}
-.hidden-logo {
-  display: none;
-}
 .links-container {
   height: 0;
   overflow: hidden;
@@ -72,6 +66,32 @@ nav {
 .links a:hover {
   color: var(--clr-grey-1);
 }
+
+/* 
+=============== 
+  Dynamic Logo
+=============== 
+*/
+.logo {
+  height: 80px;
+}
+.mobile-logo {
+  height: 80px;
+  display: none;
+}
+.blk-logo {
+  display: inline;
+}
+.hide-blk-logo {
+  display: none;
+}
+.white-logo {
+  display: inline;
+}
+.hide-white-logo {
+  display: none;
+}
+
 @media screen and (min-width: 800px) {
   nav {
     background: transparent;
@@ -104,5 +124,24 @@ nav {
   }
   .links a:hover {
     color: var(--clr-white);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .blk-logo {
+    display: none;
+  }
+  .white-logo {
+    display: none;
+  }
+  .hide-blk-logo {
+    display: none;
+  }
+  .hide-white-logo {
+    display: none;
+  }
+  .mobile-logo {
+    display: inline;
+    width: auto !important;
   }
 }

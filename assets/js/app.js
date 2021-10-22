@@ -14,6 +14,8 @@ const links = document.querySelector(".links");
 // used in fixedNavbar()
 const navbar = document.getElementById("nav");
 const topLink = document.querySelector(".top-link");
+const whiteLogo = document.querySelector(".white-logo");
+const blkLogo = document.querySelector(".blk-logo");
 
 // used in smoothScroll()
 const scrollLinks = document.querySelectorAll(".scroll-link");
@@ -229,15 +231,17 @@ number of pixels the document has been scrolled vertically.
 
 
 var fixedNavbar = function () {
-  // const topLink = document.querySelector(".top-link");
-
   window.addEventListener("scroll", function () {
     const scrollHeight = window.pageYOffset;
     const navHeight = navbar.getBoundingClientRect().height;
     if (scrollHeight > navHeight) {
       navbar.classList.add("fixed-nav");
+      whiteLogo.classList.add("hide-white-logo");
+      blkLogo.classList.remove("hide-blk-logo");
     } else {
       navbar.classList.remove("fixed-nav");
+      whiteLogo.classList.remove("hide-white-logo");
+      blkLogo.classList.add("hide-blk-logo");
     }
 
     if (scrollHeight > 500 && modalOpen === false) {
