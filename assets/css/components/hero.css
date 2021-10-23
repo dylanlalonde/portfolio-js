@@ -35,9 +35,15 @@ Hero
   font-weight: 300;
   padding: 1rem;
 }
+#view-projects-btn {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+#cta-btn {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 .cta {
-  margin-left: 2rem;
-  margin-right: 2rem;
   background-color: white;
   color: var(--clr-black);
   font-weight: bold;
