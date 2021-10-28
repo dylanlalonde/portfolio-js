@@ -41,7 +41,7 @@ const projects = [
     category: "ruby on rails",
     previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/goodtravel.png",
     modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/goodtravel.png",
-    desc: `A tour booking web application built with Ruby on Rails.`,
+    desc: `A prototype tour booking web application built with Ruby on Rails.`,
     details: `GoodTravel is a web application I built as a solution to the exploitative nature of the travel industry. I built it in 2018 while attending a full stack development bootcamp, Le Wagon. The web application allows users to sign up and create an account, then they can view all the tours, and book one. The commission from the tour booking gets calculated and when this project goes live will be distributed to local causes.`,
     tech: `I used the <b>Ruby on Rails</b> framework and managed the <b>Postgres</b> database with <b>ActiveRecord</b> (Rails' ORM). I used <b>SASS</b> to preprocess the CSS. I used <b>Heroku</b> to manage the deployments, and <b>Cloudinary</b> to host the media and serve it conditionally. I used <b>git</b> to manage the codebase and <b>Github</b> to review the code pushed by my 2 team members.`,
     lessons: `This was my final project in a full stack dev bootcamp, so undoubtedly I learned many things working on it. Notably, one of the main things I learned was when working on a software dev project <b>there are a lot of things to do before you write any code!</b> I learned the importance of planning out <b>user journeys, a solid database schema, wireframing, mockups, and routing.</b>`,
@@ -54,7 +54,7 @@ const projects = [
     modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/btk.png",
     desc: `A sexual health website I made for the Yukon Territorial Government using Drupal CMS.`,
     details: `Better To Know is a multilingual sexual health and education information website I built for the Yukon government using the Drupal CMS while working at Outcrop Communications in 2019. Through this site, the residents of the Yukon Territory are able to access a plethora of information ranging from sexual education and health to relationships and consent. There is also access to a help line, and an anonymous contact form for questions. The Yukon government is able to log in and add different types of content to the site.`,
-    tech: `We installed Drupal 8, (A CMS built in PHP, which uses SQL as a DB) in an NGINX server. development and production deployments as well as our code repositories were hosted on Beanstalk. First I configured the content types that the client would be able to upload. Then, starting with a Theme called Barrio (based off of Bootstrap 4), I began styling the appearance. Then I used the Drupal "templating language", Twig, to customize the output. Finally, I used sCSS and JavaScript to match the designs provided by the design team. I used grunt to minify and lint the repository before pushing with git.`,
+    tech: `I installed Drupal 8, (A CMS built in PHP, which uses SQL as a DB) in an NGINX server. Both the development and production deployments, as well as our code repositories, were hosted on Beanstalk. First I configured the content types that the client would be able to upload. Then, starting with a Theme called Barrio (based off of Bootstrap 4), I began styling the appearance. Then I used the Drupal templating language, Twig, to customize the output. Finally, I used sCSS and JavaScript to match the designs provided by the design team. I used grunt to minify and lint the repository before pushing with git.`,
     lessons: `I learned the whole process of setting up a Drupal website from scratch. I also learned how to use Twig templating language, and saw the similarities between it and ERB in Ruby (which I learned in my full stack development bootcamp). I also learned a lot about the processes of going through preliminary meetings with clients, coming up with estimates for how long the work would take, making sitemaps and wireframes, and communicating back and forth with clients during and after the build.`,
   },
   {
@@ -64,9 +64,9 @@ const projects = [
     previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/fotr.png",
     modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/fotr.png",
     desc: `A Drupal website made for the biggest music festival in Northern Canada. `,
-    details: ``,
-    tech: ``,
-    lessons: ``,
+    details: `Better To Know is a multilingual sexual health and education information website I built for the Yukon government using the Drupal CMS while working at Outcrop Communications in 2019. Through this site, the residents of the Yukon Territory are able to access a plethora of information ranging from sexual education and health to relationships and consent. There is also access to a help line, and an anonymous contact form for questions. The Yukon government is able to log in and add different types of content to the site.`,
+    tech: `I installed Drupal 8, (A CMS built in PHP, which uses SQL as a DB) in an NGINX server. Both the development and production deployments, as well as our code repositories, were hosted on Beanstalk. First I configured the content types that the client would be able to upload. Then, starting with a Theme called Barrio (based off of Bootstrap 4), I began styling the appearance. Then I used the Drupal templating language, Twig, to customize the output. Finally, I used sCSS and JavaScript to match the designs provided by the design team. I used grunt to minify and lint the repository before pushing with git.`,
+    lessons: `I learned the whole process of setting up a Drupal website from scratch. I also learned how to use Twig templating language, and saw the similarities between it and ERB in Ruby (which I learned in my full stack development bootcamp). I also learned a lot about the processes of going through preliminary meetings with clients, coming up with estimates for how long the work would take, making sitemaps and wireframes, and communicating back and forth with clients during and after the build.`,
   },
   {
     id: 5,
@@ -74,10 +74,10 @@ const projects = [
     category: "drupal",
     previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/wrrb.png",
     modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/wrrb.png",
-    desc: `A website I built using Drupal for one of the largest wildlife and habitat monitoring boards in Northern Canada`,
-    details: ``,
-    tech: ``,
-    lessons: ``,
+    desc: `A website I built using Drupal for one of the largest wildlife habitat monitoring boards in Northern Canada`,
+    details: `WRRB is a responsible for monitoring one of the largest wildlife habitats in Canada. This is a massive website that is loaded with content. There are dozens of dynamically generated pages based on the input of the staff, including information pages, a blog, public procedure documents, board minutes, a huge repository of management proposals and more.`,
+    tech: `I installed Drupal 8, (A CMS built in PHP, which uses SQL as a DB) in an NGINX server. Both the development and production deployments, as well as our code repositories, were hosted on Beanstalk. First I configured the content types that the client would be able to upload. Then, starting with a Theme called Barrio (based off of Bootstrap 4), I began styling the appearance. Then I used the Drupal templating language, Twig, to customize the output. Finally, I used sCSS and JavaScript to match the designs provided by the design team. I used grunt to minify and lint the repository before pushing with git.`,
+    lessons: `I learned the whole process of setting up a Drupal website from scratch. I also learned how to use Twig templating language, and saw the similarities between it and ERB in Ruby (which I learned in my full stack development bootcamp). I also learned a lot about the processes of going through preliminary meetings with clients, coming up with estimates for how long the work would take, making sitemaps and wireframes, and communicating back and forth with clients during and after the build.`,
   },
   {
     id: 6,
@@ -85,10 +85,10 @@ const projects = [
     category: "drupal",
     previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/tic.png",
     modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/tic.png",
-    desc: `A Drupal website I built for the Tlicho Investment Corporation, who's goals include enhancing the economic self-reliance for Tłı̨chǫ first nation citizens through sustainable economic development.`,
-    details: ``,
-    tech: ``,
-    lessons: ``,
+    desc: `A Drupal website I built for the Tlicho Investment Corporation.`,
+    details: `The Tlicho Investment Corporation is an organization in the Canadian Northwest Territories who's goals include enhancing the economic self-reliance, prosperity, and certainty for Tłı̨chǫ first nation citizens through sustainable economic development. I built this website for them in 2020 while working for the premier communications agency in northern Canada, Outcrop Communications. Through the use of this site, hundreds of monthly visitors are able to discover how the TIC was formed, what initiatives they are undertaking to improve economic mobility of northern indegenous people through the news articles and over 30 pages of content. Employers and prospective local indigenous employees are also able to find each other using the company directory.`,
+    tech: `I installed Drupal 8, (A CMS built in PHP, which uses SQL as a DB) in an NGINX server. Both the development and production deployments, as well as our code repositories, were hosted on Beanstalk. First I configured the content types that the client would be able to upload. Then, starting with a Theme called Barrio (based off of Bootstrap 4), I began styling the appearance. Then I used the Drupal templating language, Twig, to customize the output. Finally, I used sCSS and JavaScript to match the designs provided by the design team. I used grunt to minify and lint the repository before pushing with git.`,
+    lessons: `I learned the whole process of setting up a Drupal website from scratch. I also learned how to use Twig templating language, and saw the similarities between it and ERB in Ruby (which I learned in my full stack development bootcamp). I also learned a lot about the processes of going through preliminary meetings with clients, coming up with estimates for how long the work would take, making sitemaps and wireframes, and communicating back and forth with clients during and after the build.`,
   },
   {
     id: 7,
@@ -96,10 +96,10 @@ const projects = [
     category: "nodeJS",
     previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/riotinto.png",
     modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/riotinto.png",
-    desc: `A PWA I built from scratch for one of the world's biggest mining companies.`,
-    details: `This is an offline-first Progressive Web Application I built for Rio Tinto's Diavik Diamond mine, the biggest open pit diamond mine in North America. I built this while working at Outcrop Communications. The application caches up to a gig of media files and allows the visitor to learn many details about the mine. The app runs on the Apple iPads provided during the in-flight portion of their tour.`,
-    tech: ``,
-    lessons: ``,
+    desc: `An offline-first progressive web application I built from scratch for one of the world's biggest mining companies.`,
+    details: `Notice: The content visible in the image above is placeholder. I had nothing to do with design or content, I only developed the application and handed it over. Being proprietary This is an offline-first Progressive Web Application I built for Rio Tinto's Diavik Diamond mine, the biggest open pit diamond mine in North America. I built this while working at Outcrop Communications. The application caches up to a gig of media files and allows the visitor to learn many details about the mine. The app runs on the Apple iPads provided during the in-flight portion of their tour.`,
+    tech: `This was a progressive web application which consisted of setting up the Drupal CMS as an API and then consuming it with a custom nodeJS & Webpack front-end application. I used IndexedDB to cache content in the browser storage and make the whole app and all of its content available offline. I started by installing Drupal 8, (A CMS built in PHP, which uses SQL as a DB) in an NGINX server. Upon loading, the web application would cache the data from the content types locally, and display them on 5 different pages. The app contained videos, modals with images, text, and videos, interactive maps, and basic content pages. In order to make the caching of videos possible in IndexedDB, I needed to first convert the video files into array buffers and store them. Then, before displaying them on the DOM they needed to be converted back into video files. I used Beanstalk for hosting code and deployments.`,
+    lessons: `This project taught me a lot about asynchronous Javascript, Serviceworkers, caching data in the browser and the associated complications with both media files and generally large amounts of content. I also learned how to use Drupal exclusively as a CMS. `,
   },
   {
     id: 8,
@@ -118,10 +118,10 @@ const projects = [
     category: "React",
     previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/freeman.png",
     modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/freeman.png",
-    desc: `A web crawler built from scratch using NodeJS that automates the review of hundreds of blog articles.`,
-    details: `I built Spectacular Crawler to automate the otherwise lengthy process of reviewing some of the content heavy sites at Outcrop Communications. Some websites had hundreds of blog articles and this crawler would check each for broken links and missing videos before recording the results in a CSV spreadsheet. This crawler turned a ~20 hour task into a <5 minute task.`,
-    tech: `I built the crawler using NodeJS, Javascript, and Puppeteer (a headless Chrome Node.js API). I stored the crawled data on a CSV file. I used git and structured the project as best I could, with an IO folder, a features folder, and a data folder. I added features one at a time.`,
-    lessons: `I learned a lot about asynchronous JavaScript doing this project. I also learned a fair bit about structuring a project.`,
+    desc: `A React and NodeJS website I'm building for an NGO, The Freeman Foundation.`,
+    details: `The Freeman Foundation is a non profit organization based out of the UK that is focused on empowering people through healing and creative expression. I am currently in the process of building this website using React and NodeJS. The website will showcase their podcast, upcoming book, documentary, youtube series, and the numerous events they hold which spread awareness, rally support, and raise money for everything from addicts to sexual assault victims. The website will also have a dynamically growing directory of wellness practitioners and therapists available to its users. Lastly, the site will accept tax deductable donations for its many programs.`,
+    tech: `Initially I built them a landing page as a placeholder for their site using vanilla javascript, html, and css. I hosted this site with Netlify and used Github for hosting the code. The client decided they also want a mobile application so I decided to learn React and upgrade the site to React, so that it will be easier to build a React Native version in the future. I am currently completing a React course and will be finishing this project with React when I'm done the course.`,
+    lessons: `Taking on this freelance project made me realize how much time goes into the mockups, wireframes, design, and project management of a website. It also inspired me to learn React, which I'm loving so far.`,
   },
   // // {
   // //   id: 8,
@@ -422,7 +422,6 @@ function projectsModals() {
           <p class="modal-content-text">${targetProject.lessons}</p>
         </div>
         <!-- end of single item -->`;
-
     if (e.target.matches(".btn.modal-btn")) {
       modalOpen = true;
       modalImgDiv.innerHTML = modalImg;
