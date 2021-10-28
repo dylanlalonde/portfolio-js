@@ -320,7 +320,7 @@ var projectsMenu = function () {
   });
 
   function displayProjectMenuItems(projects) {
-    let displayProjectsMenu = projects.map((project) => {
+    let displayProjectsMenu = projects.reverse().map((project) => {
       return `<article class="project-item">
       <img src="${project.previewImg}" class="photo" alt="${project.title}">
       <div class="project-info">
