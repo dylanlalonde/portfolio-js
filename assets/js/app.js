@@ -401,7 +401,8 @@ function projectsModals() {
   addGlobalEventListener("click", ".btn.modal-btn", e => {
     let itemId = e.target.attributes[1].value;
     // let targetProject = projects.reverse()[itemId - 1];
-    let targetProject = projects[itemId - 1];
+    // let targetProject = projects[itemId - 1];
+    let targetProject = projects.reverse()[itemId];
     let modalImg = `<img src="${targetProject.modalImg}" alt="modal picture" />`
 
     // console.log(itemId);
