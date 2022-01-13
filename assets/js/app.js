@@ -320,7 +320,8 @@ var projectsMenu = function () {
   });
 
   function displayProjectMenuItems(projects) {
-    let displayProjectsMenu = projects.reverse().map((project) => {
+    // let displayProjectsMenu = projects.reverse().map((project) => {
+    let displayProjectsMenu = projects.map((project) => {
       return `<article class="project-item">
       <img src="${project.previewImg}" class="photo" alt="${project.title}">
       <div class="project-info">
@@ -402,7 +403,7 @@ function projectsModals() {
     let itemId = e.target.attributes[1].value;
     // let targetProject = projects.reverse()[itemId - 1];
     // let targetProject = projects[itemId - 1];
-    let targetProject = projects.reverse()[itemId];
+    let targetProject = projects.reverse()[itemId - 1];
     let modalImg = `<img src="${targetProject.modalImg}" alt="modal picture" />`
 
     // console.log(itemId);
