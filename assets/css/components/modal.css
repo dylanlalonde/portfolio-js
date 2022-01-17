@@ -115,6 +115,7 @@ Modal Content
 }
 .modal-content {
   padding: 2rem 1.5rem;
+  border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
 /* hide content */
