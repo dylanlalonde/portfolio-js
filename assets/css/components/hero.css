@@ -28,11 +28,12 @@ Hero
   /* margin-bottom: 1.25rem; */
 }
 .hero-title {
-  padding-bottom: 2rem;
+  /* padding-bottom: 1rem; */
 }
 .hero-tagline {
   font-size: 1rem;
   font-weight: 400;
+  font-style: italic;
   padding: .5rem 1rem .5rem 1rem;
 }
 .hero-text {
