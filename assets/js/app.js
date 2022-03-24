@@ -26,7 +26,7 @@ const scrollLinks = document.querySelectorAll(".scroll-link");
 // used in projectsMenu()
 const projects = [
   {
-    id: 3,
+    id: 1,
     title: "Better To Know",
     category: "drupal",
     previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/btk.png",
@@ -37,7 +37,7 @@ const projects = [
     lessons: `I learned the whole process of <b>setting up a Drupal website from scratch</b>. I also learned how to use <b>Twig templating language</b>, and saw the similarities between it and ERB in Ruby (which I learned in my full stack development bootcamp). I also learned a lot about the processes of going through preliminary <b>meetings with clients</b>, coming up with <b>estimates for how long the work would take</b>, making <b>sitemaps and wireframes</b>, and communicating back and forth with clients during and after the build.`,
   },
   {
-    id: 5,
+    id: 2,
     title: "Wekʼèezhìi Renewable Resources Board",
     category: "drupal",
     previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/wrrb.png",
@@ -48,7 +48,7 @@ const projects = [
     lessons: `I learned the whole process of <b>setting up a Drupal website from scratch</b>. I also learned how to use <b>Twig templating language</b>, and saw the similarities between it and ERB in Ruby (which I learned in my full stack development bootcamp). I also learned a lot about the processes of going through preliminary <b>meetings with clients</b>, coming up with <b>estimates for how long the work would take</b>, making <b>sitemaps and wireframes</b>, and communicating back and forth with clients during and after the build.`,
   },
   {
-    id: 7,
+    id: 3,
     title: "Rio Tinto Mine Tour Companion App",
     category: "nodeJS",
     previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/riotinto.png",
@@ -59,7 +59,7 @@ const projects = [
     lessons: `This project taught me a lot about <b>asynchronous Javascript</b>, <b>Serviceworkers</b>, <b>caching data in the browser</b> and the associated complications with both media files and generally large amounts of content. I also learned how to use Drupal exclusively as a CMS API. `,
   },
   {
-    id: 8,
+    id: 4,
     title: "article crawler",
     category: "nodeJS",
     previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/article-crawler.png",
@@ -70,7 +70,6 @@ const projects = [
     lessons: `I learned a lot about <b>asynchronous JavaScript</b> doing this project. I also learned a fair bit about <b>structuring a project</b>.`,
   }
 ];
-
 
 
 const sectionCenter = document.querySelector(".section-center");
