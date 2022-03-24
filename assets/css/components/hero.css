@@ -17,6 +17,9 @@ Hero
   place-items: center;
   text-align: center;
 }
+.banner-grow {
+  margin-top: 112px;
+}
 .container h1 {
   color: var(--clr-white);
   text-transform: uppercase;

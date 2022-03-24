@@ -13,6 +13,7 @@ const links = document.querySelector(".links");
 
 // used in fixedNavbar()
 const navbar = document.getElementById("nav");
+const heroBanner = document.querySelector(".banner");
 const topLink = document.querySelector(".top-link");
 const whiteLogo = document.querySelector(".white-logo");
 const blkLogo = document.querySelector(".blk-logo");
@@ -236,10 +237,12 @@ var fixedNavbar = function () {
     const navHeight = navbar.getBoundingClientRect().height;
     if (scrollHeight > navHeight) {
       navbar.classList.add("fixed-nav");
+      heroBanner.classList.add("banner-grow");
       whiteLogo.classList.add("hide-white-logo");
       blkLogo.classList.remove("hide-blk-logo");
     } else {
       navbar.classList.remove("fixed-nav");
+      heroBanner.classList.remove("banner-grow");
       whiteLogo.classList.remove("hide-white-logo");
       blkLogo.classList.add("hide-blk-logo");
     }
