@@ -50,7 +50,7 @@ const projects = [
   {
     id: 3,
     title: "Rio Tinto Mine Tour Companion App",
-    category: "nodeJS",
+    category: "PWA",
     previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/riotinto.png",
     modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/riotinto.png",
     desc: `An offline-first progressive web application I built from scratch for one of the world's biggest mining companies.`,
