@@ -26,28 +26,6 @@ const scrollLinks = document.querySelectorAll(".scroll-link");
 // used in projectsMenu()
 const projects = [
   {
-    id: 1,
-    title: "Trellis",
-    category: "wordpress",
-    previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/trellis.png",
-    modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/trellis.png",
-    desc: `A Wordpress website I made for the Japanese education non-profit, Trellis.`,
-    details: `Trellis.ngo is a website I built for the Japanese education non-profit organization I cofounded in Vietnam in 2017. The organization enabled access to english teaching to disadvantaged vietnamese youth. The multi-language website contains information about our program, a blog (which I also staffed), a signup form and a payment portal. This website enabled us to fully book our program for 2 years from launch.`,
-    tech: `I used <b>Wordpress</b> as a content management system. Wordpress 'Widgets' used were: <b>WPML Multilingual</b> for multiple language support and <b>Yoast</b> for SEO. I used <b>Stripe</b> for payment processing. Lastly, I used <b>Google Analytics</b> for analytics. For hosting and domain registration I used <b>Bluehost</b>.`,
-    lessons: `This was the first website I built professionally. I had built a few simple Wordpress websites before this one, but this one pushed my ability to build custom Wordpress sites. Along with <b>Wordpress site customization</b>, I learned how to build a <b>multilingual</b> wordpress site, as well as how to <b>collect payments using Stripe on Wordpress</b>. Also, while not directly dev related, learning <b>how to staff a blog</b> was interesting as well.`,
-  },
-  {
-    id: 2,
-    title: "GoodTravel",
-    category: "ruby on rails",
-    previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/goodtravel.png",
-    modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/goodtravel.png",
-    desc: `A prototype tour booking web application built with Ruby on Rails.`,
-    details: `GoodTravel is a web application I built as a solution to the exploitative nature of the travel industry. I built it in 2018 while attending a full stack development bootcamp, Le Wagon. The web application allows users to sign up and create an account, then they can view all the tours, and book one. The commission from the tour booking gets calculated and when this project goes live will be distributed to local causes.`,
-    tech: `I used the <b>Ruby on Rails</b> framework and managed the <b>Postgres</b> database with <b>ActiveRecord</b> (Rails' ORM). I used <b>SASS</b> to preprocess the CSS. I used <b>Heroku</b> to manage the deployments, and <b>Cloudinary</b> to host the media and serve it conditionally. I used <b>git</b> to manage the codebase and <b>Github</b> to review the code pushed by my 2 team members.`,
-    lessons: `This was my final project in a full stack dev bootcamp, so undoubtedly I learned many things working on it. Notably, one of the main things I learned was when working on a software dev project <b>there are a lot of things to do before you write any code!</b> I learned the importance of planning out <b>user journeys, a solid database schema, wireframing, mockups, and routing.</b>`,
-  },
-  {
     id: 3,
     title: "Better To Know",
     category: "drupal",
@@ -59,17 +37,6 @@ const projects = [
     lessons: `I learned the whole process of <b>setting up a Drupal website from scratch</b>. I also learned how to use <b>Twig templating language</b>, and saw the similarities between it and ERB in Ruby (which I learned in my full stack development bootcamp). I also learned a lot about the processes of going through preliminary <b>meetings with clients</b>, coming up with <b>estimates for how long the work would take</b>, making <b>sitemaps and wireframes</b>, and communicating back and forth with clients during and after the build.`,
   },
   {
-    id: 4,
-    title: "Folk on the Rocks",
-    category: "drupal",
-    previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/fotr.png",
-    modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/fotr.png",
-    desc: `A Drupal website made for the biggest music festival in Northern Canada. `,
-    details: `Folk on the Rocks is a one-of-a-kind cultural and artistic event. It is the largest folk festival in northern Canada and features many internationally and locally known artists and cultural performances. This website features a countdown timer ticking down to the day of the next festival, a slideshow of previous events, as well as an embedded playlist of some of the headline artists. There are over 20 dynamically generated pages based on the input of the staff, providing information to festival-goers about anything they need to know to attend. Users are able to buy their tickets, apply to volunteer, as well as apply as an artist. `,
-    tech: `I installed <b>Drupal 8</b>, (A <b>CMS</b> built in <b>PHP</b>, which uses <b>SQL</b> as a DB) in an <b>NGINX</b> server. Both the development and production deployments, as well as our code repositories, were hosted on <b>Beanstalk</b>. First I configured the content types that the client would be able to upload. Then, starting with a Theme called Barrio (based off of <b>Bootstrap 4</b>), I began styling the appearance. Then I used the Drupal templating language, <b>Twig</b>, to customize the output. Finally, I used <b>sCSS</b> and <b>JavaScript</b> to match the designs provided by the design team. I used <b>grunt</b> to minify and lint the repository before pushing with <b>git</b>.`,
-    lessons: `I learned the whole process of <b>setting up a Drupal website from scratch</b>. I also learned how to use <b>Twig templating language</b>, and saw the similarities between it and ERB in Ruby (which I learned in my full stack development bootcamp). I also learned a lot about the processes of going through preliminary <b>meetings with clients</b>, coming up with <b>estimates for how long the work would take</b>, making <b>sitemaps and wireframes</b>, and communicating back and forth with clients during and after the build.`,
-  },
-  {
     id: 5,
     title: "Wekʼèezhìi Renewable Resources Board",
     category: "drupal",
@@ -77,17 +44,6 @@ const projects = [
     modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/wrrb.png",
     desc: `A website I built using Drupal for one of the largest wildlife habitat monitoring boards in Northern Canada`,
     details: `WRRB is a responsible for monitoring one of the largest wildlife habitats in Canada. This is a massive website that is loaded with content. There are dozens of dynamically generated pages based on the input of the staff, including information pages, a blog, public procedure documents, board minutes, a huge repository of management proposals and more.`,
-    tech: `I installed <b>Drupal 8</b>, (A <b>CMS</b> built in <b>PHP</b>, which uses <b>SQL</b> as a DB) in an <b>NGINX</b> server. Both the development and production deployments, as well as our code repositories, were hosted on <b>Beanstalk</b>. First I configured the content types that the client would be able to upload. Then, starting with a Theme called Barrio (based off of <b>Bootstrap 4</b>), I began styling the appearance. Then I used the Drupal templating language, <b>Twig</b>, to customize the output. Finally, I used <b>sCSS</b> and <b>JavaScript</b> to match the designs provided by the design team. I used <b>grunt</b> to minify and lint the repository before pushing with <b>git</b>.`,
-    lessons: `I learned the whole process of <b>setting up a Drupal website from scratch</b>. I also learned how to use <b>Twig templating language</b>, and saw the similarities between it and ERB in Ruby (which I learned in my full stack development bootcamp). I also learned a lot about the processes of going through preliminary <b>meetings with clients</b>, coming up with <b>estimates for how long the work would take</b>, making <b>sitemaps and wireframes</b>, and communicating back and forth with clients during and after the build.`,
-  },
-  {
-    id: 6,
-    title: "Tlicho Investment Corporation",
-    category: "drupal",
-    previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/tic.png",
-    modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/tic.png",
-    desc: `A Drupal website I built for the Tlicho Investment Corporation.`,
-    details: `The Tlicho Investment Corporation is an organization in the Canadian Northwest Territories who's goals include enhancing the economic self-reliance, prosperity, and certainty for Tłı̨chǫ first nation citizens through sustainable economic development. I built this website for them in 2020 while working for the premier communications agency in northern Canada, Outcrop Communications. Through the use of this site, hundreds of monthly visitors are able to discover how the TIC was formed, what initiatives they are undertaking to improve economic mobility of northern indegenous people through the news articles and over 30 pages of content. Employers and prospective local indigenous employees are also able to find each other using the company directory.`,
     tech: `I installed <b>Drupal 8</b>, (A <b>CMS</b> built in <b>PHP</b>, which uses <b>SQL</b> as a DB) in an <b>NGINX</b> server. Both the development and production deployments, as well as our code repositories, were hosted on <b>Beanstalk</b>. First I configured the content types that the client would be able to upload. Then, starting with a Theme called Barrio (based off of <b>Bootstrap 4</b>), I began styling the appearance. Then I used the Drupal templating language, <b>Twig</b>, to customize the output. Finally, I used <b>sCSS</b> and <b>JavaScript</b> to match the designs provided by the design team. I used <b>grunt</b> to minify and lint the repository before pushing with <b>git</b>.`,
     lessons: `I learned the whole process of <b>setting up a Drupal website from scratch</b>. I also learned how to use <b>Twig templating language</b>, and saw the similarities between it and ERB in Ruby (which I learned in my full stack development bootcamp). I also learned a lot about the processes of going through preliminary <b>meetings with clients</b>, coming up with <b>estimates for how long the work would take</b>, making <b>sitemaps and wireframes</b>, and communicating back and forth with clients during and after the build.`,
   },
@@ -112,52 +68,10 @@ const projects = [
     details: `I built Article Crawler to automate the otherwise lengthy process of reviewing some of the content heavy sites at Outcrop Communications. Some websites had hundreds of blog articles and this crawler would check each for broken links and missing videos before recording the results in a CSV spreadsheet. This crawler turned a ~20 hour task into a <5 minute task.`,
     tech: `I built the crawler using <b>NodeJS</b>, <b>Javascript</b>, and <b>Puppeteer</b> (a headless Chrome Node.js API). I stored the crawled data on a <b>CSV</b> file. I used <b>git</b> and structured the project as best I could, with an IO folder, a features folder, and a data folder. I added features one at a time.`,
     lessons: `I learned a lot about <b>asynchronous JavaScript</b> doing this project. I also learned a fair bit about <b>structuring a project</b>.`,
-  },
-  {
-    id: 9,
-    title: "Freeman Foundation",
-    category: "React",
-    previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/freeman.png",
-    modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/freeman.png",
-    desc: `A React and NodeJS website I'm building for an NGO, The Freeman Foundation.`,
-    details: `The Freeman Foundation is a non profit organization based out of the UK that is focused on empowering people through healing and creative expression. I am currently in the process of building this website using React and NodeJS. The website will showcase their podcast, upcoming book, documentary, youtube series, and the numerous events they hold which spread awareness, rally support, and raise money for everything from addicts to sexual assault victims. The website will also have a dynamically growing directory of wellness practitioners and therapists available to its users. Lastly, the site will accept tax deductable donations for its many programs.`,
-    tech: `Initially I built them a landing page as a placeholder for their site using <b>vanilla javascript</b>, <b>html</b>, and <b>css</b>. I hosted this site with <b>Netlify</b> and used <b>Github</b> for hosting the code. The media is hosted on <b>cloudinary</b>. The client decided they also want a mobile application so I decided to learn React and upgrade the site to <b>React</b>, so that it will be easier to build a React Native version in the future. I am currently completing a React course and will be finishing this project with React when I'm done the course.`,
-    lessons: `Taking on this freelance project made me realize how much time goes into the <b>mockups</b>, <b>wireframes</b>, <b>design</b>, and <b>project management</b> of a website. It also inspired me to learn <b>React</b>, which I'm loving so far.`,
-  },
-  // // {
-  // //   id: 8,
-  // //   title: "american classic",
-  // //   category: "lunch",
-  // //   price: 12.99,
-  // //   img: "item-8.jpeg",
-  // //   desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats `,
-  // //   details: `I'm baby wolf pickled schlitz try-hard normcore marfa man bun mumblecore vice pop-up XOXO lomo kombucha glossier bicycle rights. Umami kinfolk salvia jean shorts offal venmo. Knausgaard tilde try-hard, woke fixie banjo man bun. Small batch tumeric mustache tbh wayfarers 8-bit shaman chartreuse tacos. Viral direct trade hoodie ugh chambray, craft beer pork belly flannel tacos single-origin coffee art party migas plaid pop-up.`,
-  // //   tech: `Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth crucifix offal deep v hella biodiesel. Church-key listicle polaroid put a bird on it chillwave palo santo enamel pin, tattooed meggings franzen la croix cray. Retro yr aesthetic four loko tbh helvetica air plant, neutra palo santo tofu mumblecore. Hoodie bushwick pour-over jean shorts chartreuse shabby chic. Roof party hammock master cleanse pop-up truffaut, bicycle rights skateboard affogato readymade sustainable deep v live-edge schlitz narwhal.`,
-  // //   lessons: `Chambray authentic truffaut, kickstarter brunch taxidermy vape heirloom four dollar toast raclette shoreditch church-key. Poutine etsy tote bag, cred fingerstache leggings cornhole everyday carry blog gastropub. Brunch biodiesel sartorial mlkshk swag, mixtape hashtag marfa readymade direct trade man braid cold-pressed roof party. Small batch adaptogen coloring book heirloom. Letterpress food truck hammock literally hell of wolf beard adaptogen everyday carry. Dreamcatcher pitchfork yuccie, banh mi salvia venmo photo booth quinoa chicharrones.`,
-  // // },
-  // // {
-  // //   id: 9,
-  // //   title: "quarantine buddy",
-  // //   category: "shakes",
-  // //   price: 16.99,
-  // //   img: "item-9.jpeg",
-  // //   desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats `,
-  // //   details: `I'm baby wolf pickled schlitz try-hard normcore marfa man bun mumblecore vice pop-up XOXO lomo kombucha glossier bicycle rights. Umami kinfolk salvia jean shorts offal venmo. Knausgaard tilde try-hard, woke fixie banjo man bun. Small batch tumeric mustache tbh wayfarers 8-bit shaman chartreuse tacos. Viral direct trade hoodie ugh chambray, craft beer pork belly flannel tacos single-origin coffee art party migas plaid pop-up.`,
-  // //   tech: `Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth crucifix offal deep v hella biodiesel. Church-key listicle polaroid put a bird on it chillwave palo santo enamel pin, tattooed meggings franzen la croix cray. Retro yr aesthetic four loko tbh helvetica air plant, neutra palo santo tofu mumblecore. Hoodie bushwick pour-over jean shorts chartreuse shabby chic. Roof party hammock master cleanse pop-up truffaut, bicycle rights skateboard affogato readymade sustainable deep v live-edge schlitz narwhal.`,
-  // //   lessons: `Chambray authentic truffaut, kickstarter brunch taxidermy vape heirloom four dollar toast raclette shoreditch church-key. Poutine etsy tote bag, cred fingerstache leggings cornhole everyday carry blog gastropub. Brunch biodiesel sartorial mlkshk swag, mixtape hashtag marfa readymade direct trade man braid cold-pressed roof party. Small batch adaptogen coloring book heirloom. Letterpress food truck hammock literally hell of wolf beard adaptogen everyday carry. Dreamcatcher pitchfork yuccie, banh mi salvia venmo photo booth quinoa chicharrones.`,
-  // // },
-  // // {
-  // //   id: 10,
-  // //   title: "steak dinner",
-  // //   category: "dinner",
-  // //   price: 39.99,
-  // //   img: "item-10.jpeg",
-  // //   desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats `,
-  // //   details: `I'm baby wolf pickled schlitz try-hard normcore marfa man bun mumblecore vice pop-up XOXO lomo kombucha glossier bicycle rights. Umami kinfolk salvia jean shorts offal venmo. Knausgaard tilde try-hard, woke fixie banjo man bun. Small batch tumeric mustache tbh wayfarers 8-bit shaman chartreuse tacos. Viral direct trade hoodie ugh chambray, craft beer pork belly flannel tacos single-origin coffee art party migas plaid pop-up.`,
-  // //   tech: `Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth crucifix offal deep v hella biodiesel. Church-key listicle polaroid put a bird on it chillwave palo santo enamel pin, tattooed meggings franzen la croix cray. Retro yr aesthetic four loko tbh helvetica air plant, neutra palo santo tofu mumblecore. Hoodie bushwick pour-over jean shorts chartreuse shabby chic. Roof party hammock master cleanse pop-up truffaut, bicycle rights skateboard affogato readymade sustainable deep v live-edge schlitz narwhal.`,
-  // //   lessons: `Chambray authentic truffaut, kickstarter brunch taxidermy vape heirloom four dollar toast raclette shoreditch church-key. Poutine etsy tote bag, cred fingerstache leggings cornhole everyday carry blog gastropub. Brunch biodiesel sartorial mlkshk swag, mixtape hashtag marfa readymade direct trade man braid cold-pressed roof party. Small batch adaptogen coloring book heirloom. Letterpress food truck hammock literally hell of wolf beard adaptogen everyday carry. Dreamcatcher pitchfork yuccie, banh mi salvia venmo photo booth quinoa chicharrones.`,
-  // }
+  }
 ];
+
+
 
 const sectionCenter = document.querySelector(".section-center");
 const container = document.querySelector(".btn-container");
