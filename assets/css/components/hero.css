@@ -19,6 +19,10 @@ Hero
 }
 .banner-grow {
   margin-top: 180px;
+
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 .container h1 {
   color: var(--clr-white);
