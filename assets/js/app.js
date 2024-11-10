@@ -28,7 +28,7 @@ const projects = [
   {
     id: 1,
     title: "Better To Know",
-    category: "drupal",
+    category: "CMS",
     previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/btk.png",
     modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/btk.png",
     desc: `A sexual health website I made for the Yukon Territorial Government using Drupal CMS.`,
@@ -39,7 +39,7 @@ const projects = [
   {
     id: 2,
     title: "Wekʼèezhìi Renewable Resources Board",
-    category: "drupal",
+    category: "CMS",
     previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/wrrb.png",
     modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/wrrb.png",
     desc: `A website I built using Drupal for one of the largest wildlife habitat monitoring boards in Northern Canada`,
@@ -61,7 +61,7 @@ const projects = [
   {
     id: 4,
     title: "article crawler",
-    category: "nodeJS",
+    category: "Custom",
     previewImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_400/v1634602014/dylanlalonde.com/article-crawler.png",
     modalImg: "https://res.cloudinary.com/dylanlalonde/image/upload/c_scale,w_800/v1634602014/dylanlalonde.com/article-crawler.png",
     desc: `A web crawler built from scratch using NodeJS that automates the review of hundreds of blog articles.`,
